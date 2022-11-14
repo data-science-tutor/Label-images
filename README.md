@@ -27,10 +27,15 @@ labelImg
 ### Визуализация аннотаций в Python
 
 ```bash
-python3 visualize.py --images-dir assets/example-dataset/images/ --annotations-dir assets/example-dataset/annotations/ --delay 5000
+python3 visualize.py \
+  --images-dir assets/example-dataset/images/ \
+  --annotations-dir assets/example-dataset/annotations/ \
+  --classes-txt assets/example-dataset/annotations/classes.txt \
+  --delay 5000
 ```
 - `--images-dir` - путь до папки с изображениями
 - `--annotations-dir` - путь до папки с аннотациями
+- `--classes-txt` - путь до файла с наименованиями классов
 - `--delay` - задержка между изображениями в миллисекундах
 
 ![](assets/readme-images/02-visualization.png)
